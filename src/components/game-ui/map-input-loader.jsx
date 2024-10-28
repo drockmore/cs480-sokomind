@@ -67,10 +67,9 @@ const MapInputLoader = () => {
                     <div className="text-lg font-bold">Parsed Result:</div>
                     <div className="bg-slate-50 border rounded mt-4 p-2">
                         {parsedArray.map((row, index) => (
-
                             <div key={index} className="flex justify-center">
                                 {row.map((cell, index) => (
-                                    <div className="w-8">
+                                    <div className="w-8" key={index}>
                                         {index === 0 && '['}
                                         &apos;{cell === ' ' ? ' ' : cell}&apos;
                                         {index === row.length - 1 ? ']' : ','}
