@@ -1,7 +1,5 @@
 import { useGameStore } from "@/app/stores/game-store"
 import { GameBoard } from "./gameboard";
-import MapBuilder from "./map-builder-input";
-
 
 export const GameboardContainer = ({ }) => {
 
@@ -12,10 +10,6 @@ export const GameboardContainer = ({ }) => {
 
     } = useGameStore();
 
-
-    if (createMap) {
-       return <MapBuilder />
-    }
 
     if (originalGameBoard?.length === 0) {
         return <EmptyGameboard />
