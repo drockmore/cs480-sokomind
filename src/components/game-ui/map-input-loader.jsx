@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Button } from '../ui/button';
 import { useGameStore } from '@/app/stores/game-store';
-import { toast } from 'sonner';
 
 const MapInputLoader = () => {
 
@@ -38,7 +37,7 @@ const MapInputLoader = () => {
             <div className="">
                 <div className="space-y-2 mb-4">
                     <div className="font-bold">Add a gameboard</div>
-                    <p>Create or Paste a gameboard below and press the "Parse Gameboard" button to parse and load the gameboard.</p>
+                    <p>Create or Paste a gameboard below and press the &quot;Parse Gameboard&quot; button to parse and load the gameboard.</p>
 
 
                     {error && (
